@@ -1,10 +1,4 @@
-pipeline{
-    agent any
-    environment{
-        DIRECTORY_PATH= "./D"
-        TESTING_ENVIRONMET= "Test"
-        PRODUCTION_ENVIRONMENT= "Arsh"
-    }
+pipeline{   
     stages{
         stage('Build'){
             steps{
@@ -65,6 +59,7 @@ pipeline{
         stage('Deploy to Production'){
             steps{
                 echo "Deploying..."
+                echo "Testing automated build upon commit"
             }
         }
     }
