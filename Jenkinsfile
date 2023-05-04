@@ -60,7 +60,7 @@ pipeline{
         stage('Deploy to Production'){
             steps{
                 echo "Deploying..."
-                echo "Testing automated build upon commit"
+                echo "Automation for build after commit"
             }
         }
     }
